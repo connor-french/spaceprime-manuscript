@@ -1,0 +1,173 @@
+collection_num,longitude,latitude,date_collected,id,species,state,locality,source,jar_num,county,connor_notes,lab,alt_m,notes
+MVZ:Herp:233414,-48.6333,-25.8833,1996-06-04T00:00:00Z,1145545021,distincta,Parana,Municipality of Guaratuba,gbif,NA,NA,NA,NA,NA,NA
+69624601,-48.716829,-27.169879,2021-02-14T11:18:51Z,3044567206,distincta,Santa Catarina,"Tijucas - SC, 88200-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+40829290,-47.983204,-24.116604,2012-01-07T23:32:00Z,2596355434,distincta,São Paulo,"Rodovia SP-139, km 78 - Abaitinga, Sete Barras - SP, 18230-000, Brazil",gbif,NA,NA,NA,NA,NA,NA
+106082811,-47.014321,-24.369859,2022-01-27T15:57:00Z,3772589489,distincta,São Paulo,"Guaraú - Q.ta do Guarau, Peruíbe - SP, 11750-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+35132653,-49.581356,-28.559573,2019-10-16T21:17:56Z,2448001684,distincta,Santa Catarina,"São Pedro, Siderópolis",gbif,NA,NA,NA,NA,NA,NA
+108829310,-49.048409,-26.928977,2007-11-11T06:20:00Z,3743024208,distincta,Santa Catarina,"Ribeirão Fresco, Blumenau - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+114309358,-47.014321,-24.369844,2022-01-28T00:00:00Z,3772406054,distincta,São Paulo,"Guaraú - Q.ta do Guarau, Peruíbe - SP, 11750-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+36826122,-49.564636,-26.949082,2018-09-29T00:00:00Z,2540841809,distincta,Santa Catarina,"Ibirama - SC, 89140-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+21187745,-49.142686,-26.864428,2019-03-01T20:40:32Z,2540725825,distincta,Santa Catarina,"Rua João Nuss, 301, Blumenau, SC, BR",gbif,NA,NA,NA,NA,NA,NA
+108829312,-49.048409,-26.928977,2007-11-01T21:20:00Z,3743282383,distincta,Santa Catarina,"Ribeirão Fresco, Blumenau - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+18826114,-49.470467,-28.643386,2017-09-07T21:58:00Z,1948774091,distincta,Santa Catarina,"Rod. Centenária, Nova Veneza - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+67275474,-48.597113,-24.60081,2012-12-20T22:57:54Z,3070425353,distincta,São Paulo,"Iporanga - SP, 18330-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+67360612,-49.048451,-26.929236,2013-11-05T12:00:00Z,3013872252,distincta,Santa Catarina,"Ribeirão Fresco, Blumenau - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+108829316,-49.048409,-26.928977,2008-01-02T05:01:00Z,3743253428,distincta,Santa Catarina,"Ribeirão Fresco, Blumenau - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+67967526,-51.900395,-27.14755,2020-12-27T22:05:00Z,3031915665,distincta,Santa Catarina,"Concórdia - SC, 89700-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+66832525,-49.179818,-26.965836,2020-12-19T22:59:00Z,3008528800,distincta,Santa Catarina,"Indaial - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+77477862,-48.542197,-24.790987,2021-02-17T21:21:35Z,3112967641,distincta,Paraná,"Adrianópolis, PR, BR",gbif,NA,NA,NA,NA,NA,NA
+141088987,-48.51704,-27.767568,2022-10-12T02:36:23Z,3963248930,distincta,Santa Catarina,"Ilha de Santa Catarina, Florianópolis, SC, BR",gbif,NA,NA,NA,NA,NA,NA
+66004194,-48.27359,-24.308775,2014-12-02T12:34:00Z,2992732047,distincta,São Paulo,"Estrada Municipal, km 25 s/n Zona Rural, Ribeirão Grande - SP, 18315-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+37416002,-50.174117,-29.480988,2019-12-12T21:17:55Z,2550035949,distincta,Rio Grande do Sul,"Sao Francisco Da Paula, RS, BR",gbif,NA,NA,NA,NA,NA,NA
+66981578,-49.142654,-26.864401,2020-12-23T21:31:00Z,3008533088,distincta,Santa Catarina,"Testo Salto, Blumenau - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+103613947,-49.18803,-26.923738,2021-12-21T22:01:06Z,3457101136,distincta,Santa Catarina,"Rua Reinholdo Schroeder, Indaial, SC, BR",gbif,NA,NA,NA,NA,NA,NA
+63831401,-51.900241,-27.147294,2017-11-06T19:57:00Z,2981086668,distincta,Santa Catarina,"Concórdia - SC, 89700-000, Brasil",gbif,NA,NA,NA,NA,NA,NA
+21918075,-49.015442,-25.385035,2011-09-23T18:06:00Z,2984478322,distincta,Paraná,Reserva Jaguarapira,gbif,NA,NA,NA,NA,NA,NA
+46648251,-47.562287,-24.004652,2019-10-17T21:07:00Z,2626498886,distincta,São Paulo,"Rodovia SP 79, Km 164,5, s/n - Zona Rural, Tapiraí - SP, 18180-000, Brazil",gbif,NA,NA,NA,NA,NA,NA
+21927528,-49.015442,-25.385035,2011-09-23T18:05:00Z,2235539623,distincta,Paraná,Reserva Jaguarapira,gbif,NA,NA,NA,NA,NA,NA
+66825693,-49.178043,-26.965655,2020-12-20T00:06:00Z,3008511803,distincta,Santa Catarina,IPEVI,gbif,NA,NA,NA,NA,NA,NA
+106557046,-49.523296,-28.491224,2021-11-05T20:23:00Z,3499476761,distincta,Santa Catarina,"Treviso - SC, Brasil",gbif,NA,NA,NA,NA,NA,NA
+67773684,-51.896543,-27.148453,2020-12-27T23:24:00Z,3031915319,distincta,Santa Catarina,"Concórdia, BR-SC, BR",gbif,NA,NA,NA,NA,NA,NA
+38601,-47.24443333,-23.95806667,NA,dis_1,distincta,SP,Parque Estadual de Jurupará,celio,19263,Juquitiba,NA,NA,NA,NA
+38609,-47.24443333,-23.95806667,NA,dis_2,distincta,SP,Parque Estadual de Jurupará,celio,19339,Juquitiba,NA,NA,NA,NA
+27452,-49.03157,-24.64048,NA,dis_3,distincta,PR,Estrada para Cerro Azul (P1),celio,13108,Adrianópolis,NA,NA,NA,NA
+27453,-50.03157,-24.64048,NA,dis_4,distincta,PR,Estrada para Cerro Azul (P1),celio,13109,Adrianópolis,NA,NA,NA,NA
+27454,-51.03157,-24.64048,NA,dis_5,distincta,PR,Estrada para Cerro Azul (P1),celio,13110,Adrianópolis,NA,NA,NA,NA
+27456,-49.06635,-24.67925,NA,dis_6,distincta,PR,Estrada para Cerro Azul (P2),celio,13112,Adrianópolis,NA,NA,NA,NA
+27457,-49.06635,-24.67925,NA,dis_7,distincta,PR,Estrada para Cerro Azul (P2),celio,13113,Adrianópolis,NA,NA,NA,NA
+27458,-49.06635,-24.67925,NA,dis_8,distincta,PR,Estrada para Cerro Azul (P2),celio,13114,Adrianópolis,NA,NA,NA,NA
+32700,-46.92180556,-24.23455556,NA,dis_9,distincta,SP,NA,celio,16477,Itanhaén,NA,NA,NA,NA
+32701,-46.93025,-24.24638889,NA,dis_10,distincta,SP,NA,celio,17568,Itanhaém,NA,NA,NA,NA
+30974,-47.67852778,-24.32802778,NA,dis_11,distincta,SP,"Poça na estrada para o pesqueiro, Belo Vale (Itapoava)",celio,15197,Juquiá,NA,NA,NA,NA
+30975,-47.67852778,-24.32802778,NA,dis_12,distincta,SP,"Poça na estrada para o pesqueiro, Belo Vale (Itapoava)",celio,15198,Juquiá,NA,NA,NA,NA
+30976,-47.67852778,-24.32802778,NA,dis_13,distincta,SP,"Poça na estrada para o pesqueiro, Belo Vale (Itapoava)",celio,15199,Juquiá,NA,NA,NA,NA
+30977,-47.67852778,-24.32802778,NA,dis_14,distincta,SP,"Poça na estrada para o pesqueiro, Belo Vale (Itapoava)",celio,15200,Juquiá,NA,NA,NA,NA
+30978,-47.67852778,-24.32802778,NA,dis_15,distincta,SP,"Poça na estrada para o pesqueiro, Belo Vale (Itapoava)",celio,15201,Juquiá,NA,NA,NA,NA
+30983,-47.68830556,-24.33530556,NA,dis_16,distincta,SP,Pesqueiro Belo Vale (Represa 7 e 8),celio,15206,Juquiá,NA,NA,NA,NA
+30984,-47.68830556,-24.33530556,NA,dis_17,distincta,SP,Pesqueiro Belo Vale (Represa 7 e 8),celio,15207,Juquiá,NA,NA,NA,NA
+30985,-47.68830556,-24.33530556,NA,dis_18,distincta,SP,Pesqueiro Belo Vale (Represa 7 e 8),celio,15208,Juquiá,NA,NA,NA,NA
+31060,-48.74022222,-24.35916667,NA,dis_19,distincta,SP,Fazenda do Mathedi e do João Zachaeo; proximo lavoura tomate,celio,15282,Ribeirão Branco,NA,NA,NA,NA
+30988,-48.08044444,-24.53372222,NA,dis_20,distincta,SP,Poça temporária na pousada Encontro das águas,celio,15210,Eldorado,NA,NA,NA,NA
+30989,-48.08044444,-24.53372222,NA,dis_21,distincta,SP,Poça temporária na pousada Encontro das águas,celio,15211,Eldorado,NA,NA,NA,NA
+30990,-48.08044444,-24.53372222,NA,dis_22,distincta,SP,Poça temporária na pousada Encontro das águas,celio,15212,Eldorado,NA,NA,NA,NA
+30991,-48.08044444,-24.53372222,NA,dis_23,distincta,SP,Poça temporária na pousada Encontro das águas,celio,15213,Eldorado,NA,NA,NA,NA
+30992,-48.08044444,-24.53372222,NA,dis_24,distincta,SP,Poça temporária na pousada Encontro das águas,celio,15214,Eldorado,NA,NA,NA,NA
+38573,-47.12053333,-24.39743333,NA,dis_27,distincta,SP,Estação Ecológica de Juréia Itatins,celio,19188,Peruíbe,NA,NA,NA,NA
+31049,-49.04441667,-25.44222222,NA,dis_28,distincta,PR,Brejo na estrada da casa do Sr. Airton,celio,15271,Piraquara,NA,NA,NA,NA
+31050,-49.04441667,-25.44222222,NA,dis_29,distincta,PR,Brejo na estrada da casa do Sr. Airton,celio,15272,Piraquara,NA,NA,NA,NA
+31022,-48.88875,-25.98077778,NA,dis_30,distincta,SC,Poça atrás do posto da divisa,celio,15244,Garuva,NA,NA,NA,NA
+31023,-48.88875,-25.98077778,NA,dis_31,distincta,SC,Poça atrás do posto da divisa,celio,15245,Garuva,NA,NA,NA,NA
+31024,-48.88875,-25.98077778,NA,dis_32,distincta,SC,Poça atrás do posto da divisa,celio,15246,Garuva,NA,NA,NA,NA
+31025,-48.88875,-25.98077778,NA,dis_33,distincta,SC,Poça atrás do posto da divisa,celio,15247,Garuva,NA,NA,NA,NA
+31026,-48.88875,-25.98077778,NA,dis_34,distincta,SC,Poça atrás do posto da divisa,celio,15248,Garuva,NA,NA,NA,NA
+31027,-48.88875,-25.98077778,NA,dis_35,distincta,SC,Poça atrás do posto da divisa,celio,15249,Garuva,NA,NA,NA,NA
+31028,-48.88875,-25.98077778,NA,dis_36,distincta,SC,Poça atrás do posto da divisa,celio,15250,Garuva,NA,NA,NA,NA
+31036,-48.88875,-25.98077778,NA,dis_37,distincta,SC,Poça atrás do posto da divisa,celio,15258,Garuva,NA,NA,NA,NA
+27477,-49.00327,-26.50997,NA,dis_38,distincta,SC,"Estrada entre Guaramirim e Jaraguá do Sul (Casa do Sr. Miro/Secretário de Agricultura), poça",celio,13133,Guaramirim,NA,NA,NA,NA
+27501,-49.25941,-26.80752,NA,dis_39,distincta,SC,Brejo atrás da casa do Sr. Eduardo,celio,13157,Timbó,NA,NA,NA,NA
+27502,-49.25941,-26.80752,NA,dis_40,distincta,SC,Brejo atrás da casa do Sr. Eduardo,celio,13158,Timbó,NA,NA,NA,NA
+27503,-49.25941,-26.80752,NA,dis_41,distincta,SC,Brejo atrás da casa do Sr. Eduardo,celio,13159,Timbó,NA,NA,NA,NA
+27504,-49.25941,-26.80752,NA,dis_42,distincta,SC,Brejo atrás da casa do Sr. Eduardo,celio,13160,Timbó,NA,NA,NA,NA
+27505,-49.25941,-26.80752,NA,dis_43,distincta,SC,Brejo atrás da casa do Sr. Eduardo,celio,13161,Timbó,NA,NA,NA,NA
+27519,-49.09114,-27.02897,NA,dis_45,distincta,SC,"Poça ao lado do cemitério, Nova Rússia",celio,13175,Blumenau,NA,NA,NA,NA
+27520,-49.09114,-27.02897,NA,dis_46,distincta,SC,"Poça ao lado do cemitério, Nova Rússia",celio,13176,Blumenau,NA,NA,NA,NA
+27521,-49.09114,-27.02897,NA,dis_47,distincta,SC,"Poça ao lado do cemitério, Nova Rússia",celio,13177,Blumenau,NA,NA,NA,NA
+33712,-48.54841667,-27.16025,NA,dis_48,distincta,SC,Estrada da Pousada Morro do Sul,celio,16574,Porto Belo,NA,NA,NA,NA
+33713,-48.54841667,-27.16025,NA,dis_49,distincta,SC,Estrada da Pousada Morro do Sul,celio,16583,Porto Belo,NA,NA,NA,NA
+33715,-48.50696667,-27.45851667,NA,dis_50,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16585,Florianópolis,NA,NA,NA,NA
+33716,-48.50696667,-27.45851667,NA,dis_51,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16586,Florianópolis,NA,NA,NA,NA
+33717,-48.50696667,-27.45851667,NA,dis_52,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16587,Florianópolis,NA,NA,NA,NA
+33718,-48.50696667,-27.45851667,NA,dis_53,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16588,Florianópolis,NA,NA,NA,NA
+33719,-48.50696667,-27.45851667,NA,dis_54,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16589,Florianópolis,NA,NA,NA,NA
+33720,-48.50696667,-27.45851667,NA,dis_55,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16590,Florianópolis,NA,NA,NA,NA
+33721,-48.50696667,-27.45851667,NA,dis_56,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16591,Florianópolis,NA,NA,NA,NA
+33722,-48.50696667,-27.45851667,NA,dis_57,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16592,Florianópolis,NA,NA,NA,NA
+33723,-48.50696667,-27.45851667,NA,dis_58,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16593,Florianópolis,NA,NA,NA,NA
+33724,-48.50696667,-27.45851667,NA,dis_59,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16594,Florianópolis,NA,NA,NA,NA
+33725,-48.50696667,-27.45851667,NA,dis_60,distincta,SC,"Estrada dentro do terreno da Habitasul, estrada velha, entre Jurerê Internacional e Praia da Daniela",celio,16595,Florianópolis,NA,NA,NA,NA
+33738,-49.00493333,-27.58853333,NA,dis_61,distincta,SC,Estrada de terra entre Rancho Queimado e Angelina,celio,16608,Rancho Queimado,NA,NA,NA,NA
+33739,-49.00493333,-27.58853333,NA,dis_62,distincta,SC,Estrada de terra entre Rancho Queimado e Angelina,celio,16609,Rancho Queimado,NA,NA,NA,NA
+33740,-49.00493333,-27.58853333,NA,dis_63,distincta,SC,Estrada de terra entre Rancho Queimado e Angelina,celio,16610,Rancho Queimado,NA,NA,NA,NA
+33697,-49.65375,-27.83306667,NA,dis_64,distincta,SC,Poça atrás da casa do Marcelo,celio,16567,Santa Lídia,NA,NA,NA,NA
+33698,-49.65375,-27.83306667,NA,dis_65,distincta,SC,Poça atrás da casa do Marcelo,celio,16568,Santa Lídia,NA,NA,NA,NA
+33699,-49.65375,-27.83306667,NA,dis_66,distincta,SC,Poça atrás da casa do Marcelo,celio,16569,Santa Lídia,NA,NA,NA,NA
+33700,-49.65375,-27.83306667,NA,dis_67,distincta,SC,Poça atrás da casa do Marcelo,celio,16570,Santa Lídia,NA,NA,NA,NA
+NA,-49.33055556,-27.36047222,NA,dis_68,distincta,SC,NA,celio,13525,Vidal Ramos,NA,NA,NA,NA
+27561,-49.45014,-28.48996,NA,dis_69,distincta,SC,"Eucaliptal com poça, próximo a capela da Nossa Senhora do Campo",celio,13217,Treviso,NA,NA,NA,NA
+27562,-49.45014,-28.48996,NA,dis_70,distincta,SC,"Eucaliptal com poça, próximo a capela da Nossa Senhora do Campo",celio,13218,Treviso,NA,NA,NA,NA
+27563,-49.45014,-28.48996,NA,dis_71,distincta,SC,"Eucaliptal com poça, próximo a capela da Nossa Senhora do Campo",celio,13219,Treviso,NA,NA,NA,NA
+33731,-49.89993333,-28.188,NA,dis_72,distincta,SC,Estrada de terra entre São Martinho e Imbituba,celio,16601,São Martinho,NA,NA,NA,NA
+33701,-50.65375,-28.83306667,NA,dis_74,distincta,SC,Poça atrás da casa do Marcelo,celio,16571,Santa Lídia,NA,NA,NA,NA
+27556,-49.89283,-29.38063,NA,dis_75,distincta,RS,"Estrada entre Dom Pedro de Alcântara e Três Quedas, Sítio do seu Valderi, próximo do Rio das Pacas",celio,13212,Dom Pedro de Alcântara,NA,NA,NA,NA
+27557,-49.89283,-29.38063,NA,dis_76,distincta,RS,"Estrada entre Dom Pedro de Alcântara e Três Quedas, Sítio do seu Valderi, próximo do Rio das Pacas",celio,13213,Dom Pedro de Alcântara,NA,NA,NA,NA
+27558,-49.89283,-29.38063,NA,dis_77,distincta,RS,"Estrada entre Dom Pedro de Alcântara e Três Quedas, Sítio do seu Valderi, próximo do Rio das Pacas",celio,13214,Dom Pedro de Alcântara,NA,NA,NA,NA
+27559,-49.89283,-29.38063,NA,dis_78,distincta,RS,"Estrada entre Dom Pedro de Alcântara e Três Quedas, Sítio do seu Valderi, próximo do Rio das Pacas",celio,13215,Dom Pedro de Alcântara,NA,NA,NA,NA
+NA,-49.89283,-29.38063,NA,dis_79,distincta,RS,"Estrada entre Dom Pedro de Alcântara e Três Quedas, Sítio do seu Valderi, próximo do Rio das Pacas",celio,13221,Dom Pedro de Alcântara,NA,NA,NA,NA
+36254,-48.410055560000004,-24.22313889,NA,dis_83,distincta,SP,Proximidades da Fazenda Intermontes,celio,21867,Ribeirão Grande,NA,NA,NA,NA
+36255,-48.410055560000004,-24.22313889,NA,dis_84,distincta,SP,Proximidades da Fazenda Intermontes,celio,21868,Ribeirão Grande,NA,NA,NA,NA
+36256,-48.410055560000004,-24.22313889,NA,dis_85,distincta,SP,Proximidades da Fazenda Intermontes,celio,21869,Ribeirão Grande,NA,NA,NA,NA
+36258,-48.410055560000004,-24.22313889,NA,dis_86,distincta,SP,Proximidades da Fazenda Intermontes,celio,21871,Ribeirão Grande,NA,NA,NA,NA
+36259,-48.410055560000004,-24.22313889,NA,dis_87,distincta,SP,Proximidades da Fazenda Intermontes,celio,21872,Ribeirão Grande,NA,NA,NA,NA
+36244,-48.42955556,-24.19869444,NA,dis_88,distincta,SP,Fazenda Intermontes,celio,21857,Ribeirão Grande,NA,NA,NA,NA
+36245,-48.42955556,-24.19869444,NA,dis_89,distincta,SP,Fazenda Intermontes,celio,21858,Ribeirão Grande,NA,NA,NA,NA
+36246,-48.42955556,-24.19869444,NA,dis_90,distincta,SP,Fazenda Intermontes,celio,21859,Ribeirão Grande,NA,NA,NA,NA
+36248,-48.42955556,-24.19869444,NA,dis_91,distincta,SP,Fazenda Intermontes,celio,21861,Ribeirão Grande,NA,NA,NA,NA
+36249,-48.42955556,-24.19869444,NA,dis_92,distincta,SP,Fazenda Intermontes,celio,21862,Ribeirão Grande,NA,NA,NA,NA
+36257,-48.42955556,-24.19869444,NA,dis_93,distincta,SP,Proximidades da Fazenda Intermontes,celio,21870,Ribeirão Grande,NA,NA,NA,NA
+94,-48.5747,-25.8828,NA,dis_94,distincta,PR,NA,tuliana_request,NA,Guaratuba,NA,31,15,NA
+120,-48.5747,-25.8828,NA,dis_95,distincta,PR,NA,tuliana_request,NA,Guaratuba,NA,32,15,NA
+151,-48.5747,-25.8828,NA,dis_96,distincta,PR,NA,tuliana_request,NA,Guaratuba,NA,33,15,NA
+839,-48.74308,-24.35861,NA,dis_97,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,34,910,NA
+844,-48.74308,-24.35861,NA,dis_98,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,35,910,NA
+1127,-48.74308,-24.35861,NA,dis_99,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,36,910,NA
+1525,-48.74308,-24.35861,NA,dis_100,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,37,910,NA
+1526,-48.74308,-24.35861,NA,dis_101,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,38,910,NA
+1527,-48.74308,-24.35861,NA,dis_102,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,39,910,NA
+1528,-48.74308,-24.35861,NA,dis_103,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,40,910,NA
+1529,-48.74308,-24.35861,NA,dis_104,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,41,910,NA
+1530,-48.74308,-24.35861,NA,dis_105,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,42,910,NA
+1531,-48.74308,-24.35861,NA,dis_106,distincta,SP,NA,tuliana_request,NA,Ribeirão Branco,NA,43,910,NA
+1605,-47.7164,-23.8131,NA,dis_107,distincta,SP,NA,tuliana_request,NA,Pilar do Sul,NA,47,689 ,NA
+2407,-49.4575,-28.5156,NA,dis_108,distincta,SC,NA,tuliana_request,NA,Treviso,NA,48,147 ,NA
+3018,-49.3786,-26.2503,NA,dis_109,distincta,SC,NA,tuliana_request,NA,São Bento do Sul,NA,49,838 ,NA
+3022,-48.69186,-26.72425,NA,dis_110,distincta,SC,NA,tuliana_request,NA,Barra Velha,NA,50,NA,NA
+3023,-48.69186,-26.72425,NA,dis_111,distincta,SC,NA,tuliana_request,NA,Barra Velha,NA,51,NA,NA
+3024,-48.69186,-26.72425,NA,dis_112,distincta,SC,NA,tuliana_request,NA,Barra Velha,NA,52,NA,NA
+3031,-48.69186,-26.72425,NA,dis_113,distincta,SC,NA,tuliana_request,NA,Barra Velha,NA,53,NA,NA
+3090,-48.7119,-25.4286,NA,dis_114,distincta,PR,NA,tuliana_request,NA,Antonina,NA,54,20 ,NA
+CFBH,-48.7119,-25.4286,NA,dis_115,distincta,PR,NA,tuliana_request,NA,Antonina,NA,55,20 ,NA
+3933,-49.2431,-26.4253,NA,dis_116,distincta,SC,NA,tuliana_request,NA,Corupá,NA,56,75 ,NA
+3936,-49.2431,-26.4253,NA,dis_117,distincta,SC,NA,tuliana_request,NA,Corupá,NA,57,75 ,NA
+3937,-49.2431,-26.4253,NA,dis_118,distincta,SC,NA,tuliana_request,NA,Corupá,NA,58,75 ,NA
+5201,-47.881100000000004,-24.715,NA,dis_119,distincta,SP,NA,tuliana_request,NA,Pariquera-Açu,NA,119,39,NA
+3291,-49.46888,-28.46893,NA,dis_120,distincta,SC,NA,tuliana_request,NA,Treviso,NA,120,NA,NA
+3292,-49.46888,-28.46893,NA,dis_121,distincta,SC,NA,tuliana_request,NA,Treviso,NA,121,NA,NA
+3293,-49.45819,-28.49187,NA,dis_122,distincta,SC,NA,tuliana_request,NA,Treviso,NA,122,NA,NA
+3294,-49.45819,-28.49187,NA,dis_123,distincta,SC,NA,tuliana_request,NA,Treviso,NA,123,NA,NA
+MT/USP,-47.5553,-24.7081,NA,dis_124,distincta,SP,NA,tuliana_request,NA,Iguape,NA,126,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_125,distincta,SP,NA,tuliana_request,NA,Iguape,NA,127,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_126,distincta,SP,NA,tuliana_request,NA,Iguape,NA,129,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_127,distincta,SP,NA,tuliana_request,NA,Iguape,NA,130,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_128,distincta,SP,NA,tuliana_request,NA,Iguape,NA,131,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_129,distincta,SP,NA,tuliana_request,NA,Iguape,NA,132,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_130,distincta,SP,NA,tuliana_request,NA,Iguape,NA,133,3 ,NA
+MT/USP,-47.5553,-24.7081,NA,dis_131,distincta,SP,NA,tuliana_request,NA,Iguape,NA,134,3 ,NA
+MT/USP,-50.7411,-23.7275,NA,dis_132,distincta,PR,NA,tuliana_request,NA,São Geronimo da Serra,NA,137,976 ,NA
+MT/USP,-50.7411,-23.7275,NA,dis_133,distincta,PR,NA,tuliana_request,NA,São Geronimo da Serra,NA,138,976 ,NA
+MT/USP,-50.7411,-23.7275,NA,dis_134,distincta,PR,NA,tuliana_request,NA,São Geronimo da Serra,NA,139,976 ,NA
+2658,-48.6126,-25.903,NA,dis_135,distincta,PR,NA,tuliana_request,NA,Guaratiba,NA,224,NA,NA
+17673,-46.6991,-23.9787,NA,dis_136,distincta,SP,NA,tuliana_request,NA,São Paulo,NA,232,NA,NA
+24248,-48.42333,-24.195,NA,dis_137,distincta,SP,NA,tuliana_request,NA,Ribeirão Grande,NA,244,NA,NA
+ATM 0003,-48.42333,-24.195,NA,dis_138,distincta,SP,NA,tuliana_request,NA,Ribeirão Grande,NA,294,NA,NA
+ATM 0004,-48.42333,-24.195,NA,dis_139,distincta,SP,NA,tuliana_request,NA,Ribeirão Grande,NA,295,NA,NA
+CMF19_017,-49.01936,-24.83742,2019-12-16T00:00:00Z,CMF19_017,distincta,NA,ribeira-1,connor_field,NA,NA,NA,NA,NA,"Vegetation overhanging ditch on the side of the road. Was raining, thunderstorms interspersed with light showers all day. Light showers at the time. No other frog species calling at location. 4 male P. distincta, 1 female P. distincta collected. Phone photos did not retain coordinates. I georeferenced from Google Timeline to within 0.5 km of the collection point. Car got stuck near the site. 21 Celsius."
+CMF19_018,-49.01936,-24.83742,2019-12-16T00:00:00Z,CMF19_018,distincta,NA,ribeira-1,connor_field,NA,NA,NA,NA,NA,"Vegetation overhanging ditch on the side of the road. Was raining, thunderstorms interspersed with light showers all day. Light showers at the time. No other frog species calling at location. 4 male P. distincta, 1 female P. distincta collected. Phone photos did not retain coordinates. I georeferenced from Google Timeline to within 0.5 km of the collection point. Car got stuck near the site. 21 Celsius."
+CMF19_019,-49.01936,-24.83742,2019-12-16T00:00:00Z,CMF19_019,distincta,NA,ribeira-1,connor_field,NA,NA,NA,NA,NA,"Vegetation overhanging ditch on the side of the road. Was raining, thunderstorms interspersed with light showers all day. Light showers at the time. No other frog species calling at location. 4 male P. distincta, 1 female P. distincta collected. Phone photos did not retain coordinates. I georeferenced from Google Timeline to within 0.5 km of the collection point. Car got stuck near the site. 21 Celsius."
+CMF19_020,-49.01936,-24.83742,2019-12-16T00:00:00Z,CMF19_020,distincta,NA,ribeira-1,connor_field,NA,NA,NA,NA,NA,"Vegetation overhanging ditch on the side of the road. Was raining, thunderstorms interspersed with light showers all day. Light showers at the time. No other frog species calling at location. 4 male P. distincta, 1 female P. distincta collected. Phone photos did not retain coordinates. I georeferenced from Google Timeline to within 0.5 km of the collection point. Car got stuck near the site. 21 Celsius."
+CMF19_021,-49.01936,-24.83742,2019-12-16T00:00:00Z,CMF19_021,distincta,NA,ribeira-1,connor_field,NA,NA,NA,NA,NA,"Vegetation overhanging ditch on the side of the road. Was raining, thunderstorms interspersed with light showers all day. Light showers at the time. No other frog species calling at location. 4 male P. distincta, 1 female P. distincta collected. Phone photos did not retain coordinates. I georeferenced from Google Timeline to within 0.5 km of the collection point. Car got stuck near the site. 21 Celsius."
+CMF19_011,-49.59948,-25.23768,2019-12-13T00:00:00Z,CMF19_011,distincta,NA,campo-largo-1,connor_field,NA,NA,NA,NA,NA,"Medium pond- ~20 m x 15 m- on edge of the road. Trees lined pond. Forest surrounding pond. <1 m from the road. 19 Celcius. 5 male P. distincta, 1 female P. distincta collected."
+CMF19_012,-49.59948,-25.23768,2019-12-13T00:00:00Z,CMF19_012,distincta,NA,campo-largo-1,connor_field,NA,NA,NA,NA,NA,"Medium pond- ~20 m x 15 m- on edge of the road. Trees lined pond. Forest surrounding pond. <1 m from the road. 19 Celcius. 5 male P. distincta, 1 female P. distincta collected."
+CMF19_013,-49.59948,-25.23768,2019-12-13T00:00:00Z,CMF19_013,distincta,NA,campo-largo-1,connor_field,NA,NA,NA,NA,NA,"Medium pond- ~20 m x 15 m- on edge of the road. Trees lined pond. Forest surrounding pond. <1 m from the road. 19 Celcius. 5 male P. distincta, 1 female P. distincta collected."
+CMF19_014,-49.59948,-25.23768,2019-12-13T00:00:00Z,CMF19_014,distincta,NA,campo-largo-1,connor_field,NA,NA,NA,NA,NA,"Medium pond- ~20 m x 15 m- on edge of the road. Trees lined pond. Forest surrounding pond. <1 m from the road. 19 Celcius. 5 male P. distincta, 1 female P. distincta collected."
+CMF19_015,-49.59948,-25.23768,2019-12-13T00:00:00Z,CMF19_015,distincta,NA,campo-largo-1,connor_field,NA,NA,NA,NA,NA,"Medium pond- ~20 m x 15 m- on edge of the road. Trees lined pond. Forest surrounding pond. <1 m from the road. 19 Celcius. 5 male P. distincta, 1 female P. distincta collected."
+CMF19_016,-49.59948,-25.23768,2019-12-13T00:00:00Z,CMF19_016,distincta,NA,campo-largo-1,connor_field,NA,NA,NA,NA,NA,"Medium pond- ~20 m x 15 m- on edge of the road. Trees lined pond. Forest surrounding pond. <1 m from the road. 19 Celcius. 5 male P. distincta, 1 female P. distincta collected."

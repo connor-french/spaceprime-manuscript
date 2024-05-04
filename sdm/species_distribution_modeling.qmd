@@ -1,0 +1,412 @@
+---
+title: "Species Distribution Modeling of *Phyllomedusa distincta*"
+output: gfm
+editor: visual
+knitr:
+  opts_chunk:
+    warning: false
+    message: false
+bibliography: sdm.bib
+---
+
+```{r}
+#| label: setup
+#| message: false
+#| warning: false
+
+library(sf)
+library(terra)
+library(spThin)
+library(janitor)
+library(here)
+library(rasterVis)
+library(tidyverse)
+library(patchwork)
+library(usdm)
+library(tidyterra)
+library(rnaturalearth)
+library(ENMeval)
+```
+
+# Current
+
+## Variable selection
+
+Bioclims:
+
+I'm using CHELSA V2.1 CMIP6 Bioclims at 30 arc-seconds resolution, aggregated to 5 arc-minutes @karger2017. **Downloaded on 2024-04-27.**
+
+For projecting to past climates, I'm using [CHELSA TraCE21k v1.0 Bioclims](https://cp.copernicus.org/preprints/cp-2021-30/cp-2021-30.pdf) at 1000-year intervals back to the LGM. 30 arc-seconds resolution, aggregated to 5 arc-minutes @karger2023. **Download on 2024-04-27.**
+
+## Variable processing
+
+First, I'm reading in the localities and plotting them to make sure there isn't anything wild. Everything looks reasonable!
+
+```{r}
+#| label: locs
+#| message: false
+
+  
+locs_sf <- read_csv(here("distincta_localities.csv")) %>%
+  st_as_sf(coords = c("longitude", "latitude"),
+           crs = 4326,
+           remove = FALSE)
+
+# atlantic forest shapefile for plotting
+af <- read_sf(here("climate", "atlantic_forest.geojson")) %>% 
+  terra::vect() %>% 
+  terra::aggregate() %>% 
+  st_as_sf()
+
+# plot
+ggplot() +
+  geom_sf(data = st_geometry(af), fill = "gray") +
+  geom_sf(data = locs_sf, shape = 21, fill = "darkgreen") +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  theme_minimal()
+```
+
+Creating a convex hull with an 2 degree buffer.
+
+```{r}
+#| label: mcp-all
+#| warning: false
+
+mcp_all <- st_convex_hull(st_union(locs_sf)) %>%
+  st_buffer(dist = units::set_units(2, degree)) 
+
+ggplot() +
+  geom_sf(data = af, fill = "gray") +
+  geom_sf(data = mcp_all, fill = "transparent") +
+  geom_sf(data = locs_sf, shape = 21, fill = "darkgreen") +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  theme_minimal()
+```
+
+Read in bioclims.
+
+```{r}
+#| label: crop-env
+#| warning: false
+
+land <- rnaturalearth::ne_countries(scale = "large", continent = "South America") %>%
+  vect() %>% 
+  terra::project("epsg:4326")
+
+bioclims <- terra::rast(list.files(here("climate"), pattern = "_0kyBP.tif", full.names = TRUE)) %>% 
+  terra::project("epsg:4326") %>% 
+  # crop the bioclims to the coastline
+  crop(land) %>% 
+  mask(land)
+
+# get the only the bioclim labels
+names(bioclims) <- str_extract(names(bioclims), "bio[\\d+]*")
+
+ggplot() +
+  geom_spatraster(data = bioclims$bio1) +
+  scale_fill_whitebox_c("muted") +
+  geom_sf(data = af, fill = "transparent") +
+  geom_sf(data = mcp_all, fill = "transparent") +
+  geom_sf(data = locs_sf, shape = 21, fill = "darkgreen") +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  labs(fill = "Average\nAnnual Temp. (C°)") +
+  theme_minimal()
+
+```
+
+## General SDM steps {.tabset}
+
+I'm going to perform the following steps:
+
+-   spatially thin localities\
+-   extract background environmental data (10,000 points max) for predictor correlation and modeling
+-   remove predictors w/ high variance inflation factor (10)
+-   Use Maxent for modeling
+    -   L, LQ, H, LQH feature classes
+    -   regularization multipliers from 0.5 to 5.0 in 0.5 increments to test a wide range of regularization
+    -   spatial cross validation (block) for model selection
+    -   select models first by AICc (model fit), followed by ommission error rate (prediction)
+
+#### Spatial thin
+
+Spatial thin. I'm using a 20 km buffer to reduce the impact of spatial autocorrelation.
+
+```{r}
+#| label: spthin
+
+set.seed(39434)
+
+#run spthin algorithm. This returns 100 possible combinations of removed localities
+output <-
+  spThin::thin(
+    locs_sf,
+    'latitude',
+    'longitude',
+    'species',
+    thin.par = 20,
+    reps = 100,
+    locs.thinned.list.return = TRUE,
+    write.files = FALSE,
+    write.log.file = FALSE,
+    verbose = FALSE
+  )
+
+# I want to maximize the # of localities returned  
+maxThin <- which(sapply(output, nrow) == max(sapply(output, nrow)))
+
+# if there are multiple iterations with the max # of localities, pick one
+maxThin <-
+  output[[ifelse(length(maxThin) > 1, maxThin[1], maxThin)]]
+
+# subset locs to match only thinned locs
+locs_sf <- locs_sf[as.numeric(rownames(maxThin)), ]
+
+# get the unused locs as a testing data set
+# this probably isn't useful since they will overlap heavily with the training data, but seems like another piece of info to look at
+test <- locs_sf[-as.numeric(rownames(maxThin)), ]
+
+ggplot() + 
+  geom_sf(data = af, fill = "gray") + 
+  geom_sf(data = locs_sf, shape = 21, fill = "darkgreen") +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  theme_minimal()
+```
+
+Write thinned locs to file.
+
+```{r}
+#| label: write-thinned
+#| eval: false
+
+st_write(locs_sf, here("distincta_thinned.geojson"))
+
+```
+
+#### Predictor VIF
+
+Sample 10000 background points. Only returned 7247 points.
+
+```{r}
+#| label: bg
+set.seed(1938)
+
+# for variable correlations
+bg_envt <- terra::spatSample(bioclims, 10000, 
+                               warn=TRUE, 
+                               na.rm = TRUE, 
+                               as.df = TRUE,
+                               xy = TRUE)
+
+# for use in ENMevaluate
+bg_coords <- bg_envt[,c("x", "y")]
+```
+
+Next, I'll extract the values for the background points and perform variance inflation factor stepwise selection with a VIF threshold of 10.
+
+```{r}
+#| label: vif
+# extract values
+bg_corr <- bg_envt %>% select(-x, -y)
+
+usdm::vifstep(bg_corr, th=10)
+```
+
+The final variable list: BIO2, BIO4, BIO5, BIO8, BIO9, BIO13, BIO19
+
+```{r}
+# label: pred
+
+predictors <- bioclims[[c("bio2", "bio4", "bio5", "bio8", "bio9", "bio13", "bio19")]]
+```
+
+#### Maxent model
+
+I'm using a spatial cross-validation (block) evaluation approach to reduce the impact of spatial autocorrelation on inference. Following @radosavljevic2014.
+
+```{r}
+#| label: folds
+set.seed(70787)
+coords <- st_coordinates(locs_sf)
+colnames(coords) <- c("x", "y")
+
+folds <- ENMeval::get.block(occs = coords, bg = bg_coords, orientation = "lon_lat")
+```
+
+Plot the folds assignments of localities.
+
+```{r}
+#| label: plot-folds
+
+locs_folds <- locs_sf %>% 
+  mutate(fold = as.factor(folds$occs.grp))
+
+ggplot() +
+  geom_sf(data = af, fill = "gray") +
+  geom_sf(data = locs_folds, aes(fill = fold), shape = 21) +
+  scale_fill_viridis_d() +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  theme_minimal()
+  
+```
+
+Run the model. Predictions are clamped to prevent extrapolation.
+
+```{r}
+#| label: run-model
+#| eval: false
+
+set.seed(34223)
+
+# the vector of regularization multipliers to test
+rms <- seq(0.5, 5, 0.5)
+
+# convert the terra object to a raster stack for use in EMNeval
+predictors_stack <- raster::stack(predictors)
+
+# iterate model building over all chosen parameter settings
+sdm <-
+  ENMeval::ENMevaluate(
+    occs = coords,
+    envs = predictors_stack,
+    bg = bg_coords,
+    tune.args = list(fc = c("L", "LQ", "H", "LQH"), rm = rms),
+    partitions = "user",
+    algorithm = "maxent.jar",
+    # clamping to prevent model extrapolation
+    doClamp = TRUE,
+    user.grp = folds,
+    taxon.name = "distincta",
+    n.bg = 10000,
+    parallel = TRUE,
+    numCores = 6
+  )
+```
+
+```{r}
+#| label: write-model
+#| eval: false
+
+# write the model to file
+write_rds(sdm, here("output", "sdm.rds"))
+```
+
+```{r}
+#| label: read-model
+#| echo: false
+
+sdm <- read_rds(here("output", "sdm.rds"))
+```
+
+##### Model evaluation
+
+Let's take a look at the model results.
+
+```{r}
+#| label: mod-results
+eval_table <- sdm@results
+eval_mods <- sdm@models
+
+names(eval_mods) <-
+  str_replace_all(names(eval_mods), "\\.", "\\_")
+```
+
+Select the final model. I'm going to take a look at tables of delta AICc, omission rate, and AUC to see how close the models are.
+
+Four models are within 2 AICc of each other. I selected the model with LQ feature class and a regularization multiplier of 2 because this is the simplest model out of the three (6 coefficients), contains the lowest omission rate (both 10th percentile and MTP), and has the highest AUC performance on the validation set.
+
+```{r}
+#| label: eval-table
+
+eval_table %>% 
+  select(delta.AICc, AICc, or.10p.avg, or.mtp.avg, auc.diff.avg, auc.val.avg, rm, fc, ncoef) %>%
+  arrange(delta.AICc) %>% 
+  head(10) %>% 
+  knitr::kable()
+```
+
+Select model.
+
+```{r}
+#| label: select-model
+mod <- eval_mods$fc_LQ_rm_2
+opt_seq_tune <- "fc.LQ_rm.2"
+```
+
+Plot the variable contributions and response curves. The most important variables are bio2, bio13, and bio9. All precipitation!
+
+```{r}
+#| label: var-importance
+plot(mod)
+```
+
+```{r}
+#| label: write-var-imp
+#| echo: false
+#| eval: false
+png(here("output", "plots", "variable_contributions.png"), width = 15, height = 12, units = "cm", res = 600)
+plot(mod)
+dev.off()
+```
+
+Suitability increases with precipitation amount of the wettest month, decreases with precipitation seasonality, and increases with mean monthly precipitation of the warmest quarter.
+
+```{r}
+#| label: resp-curve
+dismo::response(mod)
+```
+
+```{r}
+#| label: write-resp-curve
+#| echo: false
+#| eval: false
+png(here("output", "plots", "response_curves.png"), width = 20, height = 12, units = "cm", res = 600)
+dismo::response(mod)
+dev.off()
+
+
+```
+
+##### Project
+
+I'm projecting the model to the study area extent.
+
+```{r}
+#| label: proj-cur
+pred <- ENMeval::eval.predictions(sdm)[[opt_seq_tune]] %>% 
+  rast()
+
+
+ggplot() +
+  geom_spatraster(data = pred) +
+  scale_fill_whitebox_c("muted") +
+  geom_sf(data = af, fill = "transparent") +
+  geom_sf(data = locs_sf, fill = "darkgreen", shape = 21) +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  theme_minimal()
+```
+
+```{r}
+#| label: proj-cur-thresh
+
+pred_thresh <- pred[[opt_seq_tune]]
+# observed suitabilities
+obs_suit <- terra::extract(pred_thresh, locs_sf)
+# minimum training presence
+min_suit <- min(obs_suit)
+
+pred_thresh[pred_thresh >= min_suit] <- 1
+pred_thresh[pred_thresh < min_suit] <- 0
+
+ggplot() +
+  geom_spatraster(data = pred_thresh) +
+  scale_fill_whitebox_c("muted") +
+  geom_sf(data = af, fill = "transparent") +
+  geom_sf(data = locs_sf, fill = "darkgreen", shape = 21) +
+  coord_sf(xlim = c(-55, -45), ylim = c(-31, -22)) +
+  theme_minimal()
+```
+
+## References
+
+::: refs
+:::
