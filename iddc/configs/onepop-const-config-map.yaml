@@ -8,7 +8,7 @@
 # All boolean values must be specified like this: true or false
 
 # global arguments #
-raster: "projections.tif" #Path to raster file. Can be any raster format that rasterio can read.
+raster: "projections_pres.tif" #Path to raster file. Can be any raster format that rasterio can read.
 coords: "distincta_localities_ex.csv" #Path to file containing sampling coordinates. Must be a CSV file containing columns 'longitude' and 'latitude'.
 individuals: "distincta_localities_ex.csv" #Optional. Either a list or a path to file containing individual IDs. If a CSV, must contain a column named 'individual_id'. 
   
@@ -50,7 +50,7 @@ between_anc_pop_sumstats: false #Whether to calculate Fst and/or Dxy between anc
 map: True
 out_type: 2 #Type of output. 0 for writing tree sequences to file, 1 for writing VCFs to file, 2 for a CSV of genetic summary statistics, or 3 for writing all outputs to files.
 out_folder: "output" #Path to output folder. Default is the current working directory.
-out_prefix: "onepop" #Prefix for output files. Default is 'spaceprime'.
+out_prefix: "onepop-map-const" #Prefix for output files. Default is 'spaceprime'.
 verbose: false #Print verbose output.
 
 # CPU #

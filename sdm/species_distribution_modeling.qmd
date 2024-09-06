@@ -348,7 +348,7 @@ plot(mod)
 dev.off()
 ```
 
-Suitability increases with precipitation amount of the wettest month, decreases with precipitation seasonality, and increases with mean monthly precipitation of the warmest quarter.
+Response curves all make sense.
 
 ```{r}
 #| label: resp-curve
@@ -385,6 +385,8 @@ ggplot() +
   theme_minimal()
 ```
 
+
+The MTP threshold model seems overly permissive. I'll use it as a lower bound for a linear transformed iDDC model.
 ```{r}
 #| label: proj-cur-thresh
 
